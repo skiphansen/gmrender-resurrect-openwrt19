@@ -7,8 +7,8 @@ PKG_MAINTAINER:=h.zeller@acm.org
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/hzeller/gmrender-resurrect.git
-PKG_MIRROR_HASH:=01150d750b0cdd4ef9b221be031871f5386bd984031135fea3eff071b5f1f202
-PKG_SOURCE_VERSION:=a836de4fd198bead9e05b5561073a71e84bb957d
+PKG_MIRROR_HASH:=40413d82bede1b651aada37fbc436e283f9273653ab719ee63b95517c62f1c1d
+PKG_SOURCE_VERSION:=4ac7d8914dc089651ae9d6c421ecda8f4d0ab5e3
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.xz
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 
@@ -25,7 +25,7 @@ define Package/gmediarender
   CATEGORY:=Multimedia
   TITLE:=gmediarender
   URL:=https://github.com/hzeller/gmrender-resurrect
-  DEPENDS:= +gstreamer1 +glib2 +libupnp
+  DEPENDS:= +gstreamer1-libs +gstreamer1 +glib2 +libupnp
 endef
 
 define Package/gmrender/description
